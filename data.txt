@@ -1,1 +1,2 @@
-youtube.com | myemail@gmail.com | 12345
+youtube | myemail@gmail.com | 12345
+ebay | myemail@gmail.com | password
