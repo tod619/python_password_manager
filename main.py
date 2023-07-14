@@ -41,14 +41,10 @@ def save():
         messagebox.showinfo(
             title="OOPS", message="Please don't leave any of the fileds empty!")
     else:
-        is_ok = messagebox.askokcancel(
-            title=website, message=f"These are the details entered:\nEmail: {email}\nPassword:{password}\nIs it OK to save?")
-
-        if is_ok:
-            with open("data.txt", "a") as data_file:
-                data_file.write(f"{website} | {email} | {password}\n")
-                website_entry.delete(0, END)
-                password_entry.delete(0, END)
+        with open("data.json", "a") as data_file:
+            data_file.write(f"{website} | {email} | {password}\n")
+            website_entry.delete(0, END)
+            password_entry.delete(0, END)
 
 
 # ---------------------------- UI SETUP ------------------------------- #
