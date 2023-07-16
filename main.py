@@ -83,6 +83,9 @@ def find_password():
             password = data[website]["password"]
             messagebox.showinfo(
                 title=website, message=f"Email: {email}\n Password: {password}\n")
+        else:
+            messagebox.showinfo(
+                title=website, message=f"{website} password is not stored in this program")
 
 
 # ---------------------------- UI SETUP ------------------------------- #
